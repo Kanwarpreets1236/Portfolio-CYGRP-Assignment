@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+.container {
+  border-radius: 10px;
+  background-color: #C0C0C0;
+  padding: 30px;
+}
+body {
+  font-family: arial, sans-serif;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+<h3>Contact Form</h3>
+<div class="container">
+<form action="/action_page.php">
+<label for="firstname">First Name</label>
+<input type="text" id="firstname" name="firstname" placeholder="First Name">
+<label for="lastname">Last Name</label>
+<input type="text" id="lastname" name="lastname" placeholder="Last Name">
+<p>Age</p>
+<input type="checkbox" id="age1" name="age1" value="Age1">
+  <label for="age1">0-18</label><br>
+  <input type="checkbox" id="age2" name="age2" value="Age2">
+  <label for="age2">18-30</label><br>
+  <input type="checkbox" id="age3" name="age3" value="Age3">
+  <label for="age3">30+</label><br><br>
+ <p>Gender</p>
+ <input type="radio" id="male" name="male" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="female" value="female">
+  <label for="female">Female</label><br>  
+  <input type="radio" id="others" name="others" value="others">
+  <label for="others">Other</label><br><br>
+<label for="state">State</label> 
+<select id="state" name="state">
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Bihar">Bihar</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Delhi">Delhi</option>
+<option value="Gujrat">Gujrat</option>
+<option value="Goa">Goa</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Haryana">Haryana</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Tamil Naidu">Tamil Naidu</option>
+<option value="Maharashtra">Maharasthra</option>
+</select>
+ 
+
+<label for="subject">Subject</label>
+<textarea id="subject" name="subject" placeholder="Subject" style="height:140px"></textarea>
+<input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
